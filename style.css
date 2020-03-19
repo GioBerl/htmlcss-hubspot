@@ -36,9 +36,11 @@
 
 /* HEADER TOP */
 .header-top {
-    height: 90px;
     background-color: #F5F8FA;
     border-bottom: 1px solid #cbd6e2;
+    position: fixed;
+    /* IMPORTANTE DARE LA WIDTH */
+    width: 100%;
 }
 
 .header-top .header-top-left {
@@ -86,7 +88,7 @@
 
 /* HEADER BOTTOM */
 .header-bottom {
-    height: 90px;
+    padding-top: 90px;
     background-color: #FFFFFF;
 }
 
