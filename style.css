@@ -408,22 +408,61 @@
 /* END LEARN SECTION*/
 
 
+/* STAT SECTION */
 .stat {
-    height: 1000px;
     background-color: #FFFFFF;
 }
 
+.stat-top-left {
+    color: rgb(51, 71, 91);
+}
+
+.stat-top-left div {
+    width: 70%;
+    padding-top: 20%;
+}
+
+.stat-top-left h2 {
+    font-size: 45px;
+}
+
+.stat-top-left p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+.stat-top-left p span {
+    font-weight: bold;
+}
+
 .stat .stat-top-left {
-    height: 400px;
     width: 45%;
-    background-color: red;
     float: left;
+}
+
+
+.stat-top-right div {
+    text-align: right;
+}
+
+.stat-top-right div.first-row {
+    padding-top: 8%;
+}
+
+.stat-top-right img {
+    width: 140px;
+    vertical-align: middle;
+    padding-top: 40px;
+}
+
+.stat-top-right img:not(:last-of-type) {
+    padding-right: 30px;
 }
 
 .stat .stat-top-right {
     height: 400px;
     width: 55%;
-    background-color: blue;
     float: left;
 }
 
