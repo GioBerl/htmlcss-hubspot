@@ -41,6 +41,7 @@
     position: fixed;
     /* IMPORTANTE DARE LA WIDTH */
     width: 100%;
+    z-index: 1;
 }
 
 .header-top .header-top-left {
@@ -93,7 +94,7 @@
 }
 
 .header-bottom .header-bottom-left {
-    width: 35%;
+    width: 40%;
     height: 100%;
     /* background-color: red; */
     float: left;
@@ -104,7 +105,7 @@
 }
 
 .header-bottom .header-bottom-right {
-    width: 65%;
+    width: 60%;
     height: 100%;
     float: left;
 }
@@ -135,7 +136,8 @@
 /* HOME SECTION */
 .home {
     height: 650px;
-    background-color: #FFF5EF;
+    background-image: url(img/Background-r.png);
+    background-position: center;
 }
 
 .home .grow {
@@ -173,45 +175,140 @@
 /* END HOME SECTION */
 
 
+/* POWERFULL SECTION */
 .powerfull {
     height: 900px;
     background-color: #F5F8FA;
 }
 
 .powerfull-top .powerfull-top-left {
-    height: 300px;
+    height: 350px;
     width: 33%;
     float: left;
-    background-color: red;
+    margin-right: 1%;
+    /* background-color: red; */
+}
+
+.powerfull-top .powerfull-top-left h1 {
+    font-size: 30px;
+    font-weight: 900;
+    color: rgb(51, 71, 91);
+    margin: 60px 0 20px;
+}
+
+.powerfull-top .powerfull-top-left p {
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 30px;
+    color: rgb(51, 71, 91);
 }
 
 .powerfull-top .powerfull-top-right {
-    height: 300px;
+    height: 350px;
     width: 66%;
     float: left;
-    background-color: blue;
+    margin-bottom: 10px;
 }
 
+.powerfull-top .powerfull-top-right .card {
+    width: 100%;
+    height: 80%;
+    margin-top: 60px;
+    background-color: #FFFFFF;
+    color: rgb(51, 71, 91);
+    padding: 40px 20px;
+    position: relative;
+    box-shadow: 0 0 20px #eaf0f6;
+}
+
+.powerfull-top .powerfull-top-right .card:hover {
+    transform: scale(1.02, 1.02);
+}
+
+.powerfull-top .powerfull-top-right .card img {
+    vertical-align: middle;
+}
+
+.powerfull-top .powerfull-top-right .card h4 {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 22px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.powerfull-top .powerfull-top-right .card p:first-of-type {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+.powerfull-top .powerfull-top-right .card p:nth-of-type(2) {
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.powerfull-top .powerfull-top-right .card p:nth-of-type(2)::after {
+    content: '';
+    position: absolute;
+    height: 5px;
+    border-bottom: 1px solid rgba(153,172,194,0.2);
+    top: 4px;
+    right: 20px;
+    width: 70%;
+}
+
+.powerfull-top-right .card #popular {
+    display: inline-block;
+}
+
+.powerfull-top-right .card #popular li {
+    display: inline-block;
+    padding-right: 20px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.powerfull-top-right .card #popular li i {
+    color: #FF7A59;
+    margin-right: 8px;
+}
+
+.powerfull-top-right .card .single {
+    position: absolute;
+    right: 40px;
+}
+
+.powerfull-top-right .card .single a {
+    padding: 15px 90px;
+}
+
+
+/* POWERFULL BOTTOM */
 .powerfull-bottom .powerfull-bottom-left {
-    height: 600px;
+    height: 550px;
     width: 33%;
     float: left;
     background-color: red;
 }
 
 .powerfull-bottom .powerfull-bottom-center {
-    height: 600px;
+    height: 550px;
     width: 33%;
     float: left;
     background-color: blue;
 }
 
 .powerfull-bottom .powerfull-bottom-right {
-    height: 600px;
+    height: 550px;
     width: 33%;
     float: left;
     background-color: green;
 }
+
+/* END POWERFULL SECTION */
 
 .learn {
     height: 900px;
