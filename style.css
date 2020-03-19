@@ -409,6 +409,8 @@
 
 
 /* STAT SECTION */
+
+/* STAT TOP */
 .stat {
     background-color: #FFFFFF;
 }
@@ -465,19 +467,58 @@
     width: 55%;
     float: left;
 }
+/* END STAT TOP */
 
+
+/* STAT BOTTOM */
 .stat .stat-bottom-left {
-    height: 600px;
     width: 55%;
-    background-color: red;
+    float: left;
+    margin-bottom: 140px;
+}
+
+.stat-bottom-left div {
+    width: 80%;
+    color: rgb(51, 71, 91);
+}
+
+.stat-bottom-left div h2 {
+    font-size: 30px;
+    font-weight: 700;
+    padding: 20px 0;
+}
+
+.stat-bottom-left div p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    padding: 30px 0;
+}
+
+.stat-bottom-left div a {
+    display: inline-block;
+    padding: 25px 30px;
+    margin-bottom: 30px;
+}
+
+.stat-bottom-left div small {
+    display: block;
+}
+
+
+
+
+.stat .stat-bottom-right {
+    width: 45%;
     float: left;
 }
 
-.stat .stat-bottom-right {
-    height: 600px;
-    width: 45%;
-    background-color: blue;
-    float: left;
+.stat-bottom-right div {
+    text-align: right;
+}
+
+.stat-bottom-right div img {
+    width: 350px;
 }
 
 footer {
