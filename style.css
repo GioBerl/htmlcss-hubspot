@@ -8,7 +8,6 @@
 .container {
     width: 1080px;
     margin: auto;
-    /* border: 2px solid black; */
     height: 100%;
 }
 
@@ -46,30 +45,37 @@
 
 .header-top .header-top-left {
     width: 50%;
-    height: 100%;
     float: left;
     color: rgb(51, 71, 91);
 }
 
-.header-top .header-top-left span:first-of-type::after {
+.header-top .header-top-left i {
+    line-height: 90px;
+    margin-right: 10px;
+}
+
+ul#english {
+    display: inline-block;
+}
+
+.header-top .header-top-left li {
+    display: inline-block;
+}
+
+.header-top .header-top-left li:first-of-type::after {
     content: '';
     border-right: 2px solid #cbd6e2;
     margin: 0 20px;
 }
 
-.header-top .header-top-left i {
-    margin-right: 10px;
-}
-
-.header-top .header-top-left span {
-    display: inline-block;
-    line-height: 90px;
+.header-top .header-top-left li a {
+    text-decoration: none;
     font-weight: 500;
+    color: rgb(51, 71, 91);
 }
 
 .header-top .header-top-right {
     width: 50%;
-    height: 100%;
     float: left;
     text-align: right;
 }
@@ -89,36 +95,33 @@
 
 /* HEADER BOTTOM */
 .header-bottom {
+    /* il padding mi serve per la position fixed di header-top */
     padding-top: 90px;
-    background-color: #FFFFFF;
 }
 
 .header-bottom .header-bottom-left {
     width: 40%;
-    height: 100%;
-    /* background-color: red; */
     float: left;
 }
 
 .header-bottom .header-bottom-left img {
-    margin-top: 30px;
+    padding-top: 30px;
 }
 
 .header-bottom .header-bottom-right {
     width: 60%;
-    height: 100%;
     float: left;
 }
 
-#info {
+ul#info {
     text-align: right;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 90px;
 }
 
 #info li {
     display: inline-block;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 90px;
     padding: 0 20px;
 }
 
@@ -135,14 +138,14 @@
 
 /* HOME SECTION */
 .home {
-    height: 650px;
+    height: 750px;
     background-image: url(img/Background-r.png);
     background-position: center;
+    background-size: cover;
 }
 
 .home .grow {
-    width: 40%; 
-    height: 100%;
+    width: 40%;
 }
 
 .home .grow h1 {
@@ -154,22 +157,23 @@
 
 .home .grow p {
     font-size: 19px;
-    font-weight: 500;
+    font-weight: 100;
     line-height: 30px;
     color: rgb(51, 71, 91);
-    margin-bottom: 35px;
+    padding-bottom: 35px;
 }
 
 .home .grow a {
     display: inline-block;
     padding: 25px 30px;
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: 17px;
     margin-bottom: 20px;
 }
 
 .home .grow p:last-of-type {
     font-size: 14px;
+    line-height: 20px;
 }
 
 /* END HOME SECTION */
@@ -186,7 +190,6 @@
     width: 33%;
     float: left;
     margin-right: 1%;
-    /* background-color: red; */
 }
 
 .powerfull-top .powerfull-top-left h1 {
@@ -198,15 +201,18 @@
 
 .powerfull-top .powerfull-top-left p {
     font-size: 19px;
-    font-weight: 500;
+    font-weight: 100;
     line-height: 30px;
     color: rgb(51, 71, 91);
 }
 
 .powerfull-top .powerfull-top-right {
-    height: 350px;
     width: 66%;
     float: left;
+}
+
+.powerfull-top-right .card {
+    padding-bottom: 70px;
 }
 
 .card {
@@ -243,6 +249,10 @@
     margin-bottom: 30px;
 }
 
+.card hr {
+    margin: 30px 0;
+}
+
 .card p:nth-of-type(2) {
     text-transform: uppercase;
     font-weight: 600;
@@ -250,7 +260,7 @@
     margin-bottom: 20px;
 }
 
-.powerfull-top .powerfull-top-right .card p:nth-of-type(2)::after {
+.powerfull-top-right .card p:nth-of-type(2)::after {
     content: '';
     position: absolute;
     height: 5px;
@@ -261,14 +271,13 @@
 }
 
 .card #popular {
-    display: inline-block;
+    font-size: 15px;
+    font-weight: 500;
 }
 
 .card #popular li {
     display: inline-block;
-    padding-right: 20px;
-    font-size: 15px;
-    font-weight: 500;
+    padding-right: 20px; 
 }
 
 .card #popular li i {
@@ -422,6 +431,7 @@
 .stat-top-left div {
     width: 70%;
     padding-top: 20%;
+    padding-bottom: 30%;
 }
 
 .stat-top-left h2 {
@@ -463,7 +473,6 @@
 }
 
 .stat .stat-top-right {
-    height: 400px;
     width: 55%;
     float: left;
 }
@@ -612,7 +621,7 @@ footer .copyright small {
 
 footer .legal {
     float: right;
-    margin-bottom: 100px;
+    padding-bottom: 100px;
 }
 
 footer .legal a {
@@ -625,12 +634,14 @@ footer .legal a {
 
 /* HELP CHAT  */
 /* .help-chat {
+    display: inline-block;
     position: fixed;
     bottom: 2%;
     right: 1%;
 }
 
 .help-chat div {
+    display: inline-block;
     background-color: #425B76;
     border-radius: 100px;
     height: 70px;
