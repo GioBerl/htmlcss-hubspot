@@ -33,6 +33,14 @@
     color: #FFFFFF;
 }
 
+.btn:hover {
+    background-color: #fff1ee;
+}
+
+.btn-secondary:hover {
+    background-color: #ffbcac;
+}
+
 /* HEADER TOP */
 .header-top {
     background-color: #F5F8FA;
